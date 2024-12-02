@@ -1,7 +1,7 @@
 //
 export default {
-	namespaced: true,
-	actions   : {},
-	mutations : {},
-	state     : {}
+  namespaced: true,
+  actions: {},
+  mutations: {},
+  state: {},
 };

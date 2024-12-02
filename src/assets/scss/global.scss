@@ -28,9 +28,9 @@
 
 .van-overlay {
   //只作用于第二个元素
-    &:nth-child(2) {
-      background-color: rgba(0, 0, 0, .1) !important;
-    }
+  &:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
 }
 
 .dangerMsg {

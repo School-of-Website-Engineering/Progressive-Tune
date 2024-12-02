@@ -13,15 +13,15 @@ import exploreNotes from "@/store/exploreNotes";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-	modules: {
-		isShowLoading,
-		timer,
-		player,
-		foods,
-		basicValue,
-		timeState,
-		weatherSys,
-		mapEvent,
-		exploreNotes
-	}
+  modules: {
+    isShowLoading,
+    timer,
+    player,
+    foods,
+    basicValue,
+    timeState,
+    weatherSys,
+    mapEvent,
+    exploreNotes,
+  },
 });

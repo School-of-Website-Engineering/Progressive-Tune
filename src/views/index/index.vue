@@ -1,16 +1,16 @@
 <template>
-	<div>
-		<!-- 全局状态栏 -->
-		<globalStatusBar></globalStatusBar>
-		<!-- 快捷栏 -->
-		<shortcutBar></shortcutBar>
-		<!--		文本输出-->
-		<textOutput></textOutput>
-		<!-- 事件 -->
-		<event></event>
-		<!-- 底部菜单 -->
-		<bottomMenu></bottomMenu>
-	</div>
+  <div>
+    <!-- 全局状态栏 -->
+    <globalStatusBar></globalStatusBar>
+    <!-- 快捷栏 -->
+    <shortcutBar></shortcutBar>
+    <!--		文本输出-->
+    <textOutput></textOutput>
+    <!-- 事件 -->
+    <event></event>
+    <!-- 底部菜单 -->
+    <bottomMenu></bottomMenu>
+  </div>
 </template>
 
 <script>
@@ -21,14 +21,14 @@ import shortcutBar from "@/views/index/shortcutBar";
 import textOutput from "@/views/index/textOutput";
 
 export default {
-	name      : "index",
-	components: {
-		bottomMenu,
-		event,
-		globalStatusBar,
-		shortcutBar,
-		textOutput
-	}
+  name: "index",
+  components: {
+    bottomMenu,
+    event,
+    globalStatusBar,
+    shortcutBar,
+    textOutput,
+  },
 };
 </script>
 
@@ -36,6 +36,6 @@ export default {
 @import "@/assets/scss/_color.scss";
 
 body {
-	background: $white;
+  background: $white;
 }
 </style>

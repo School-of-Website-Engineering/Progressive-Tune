@@ -1,59 +1,59 @@
 module.exports = {
-	//root: true 用于指定它是最顶层的配置，即它在任何情况下都会被采用，而不会被继承覆盖
-	root: true,
-	//env 指定代码运行的环境
-	env : {
-		browser: true,
-		node   : true,
-		es2021 : true,
-		es6    : true
-	},
-	//extends 指定继承的配置
-	extends      : ["plugin:vue/essential"],
-	//plugins 指定使用的插件
-	plugins      : ["@typescript-eslint"],
-	// parserOptions 指定解析器选项
-	parserOptions: { parser: "babel-eslint" },
-	plugins      : ["vue"],
-	// rules 指定自定义的规则
-	rules        : {
-		//自动对齐上下行等号
-		"key-spacing"                : ["error", { beforeColon: false, afterColon: true }],
-		eqeqeq                       : "off",
-		curly                        : "error",
-		quotes                       : ["error", "double"],
-		"arrow-parens"               : 0,
-		"generator-star-spacing"     : 0,
-		"no-unused-vars"             : "warn",
-		"no-debugger"                : process.env.NODE_ENV === "production" ? "error" : "off",
-		indent                       : [2, 4, { SwitchCase: 1 }],
-		"space-before-function-paren": ["error", "never"],
-		"no-constant-condition"      : ["warn"],
-		"no-empty"                   : ["off"],
-		"comma-spacing"              : ["error", { after: true }],
-		"key-spacing"                : [
-			"error",
-			{
-				singleLine: {},
-				multiLine : { align: "colon" }
-			}
-		],
-		"object-curly-newline" : ["error", { multiline: true }],
-		"array-bracket-newline": ["error", { multiline: true }],
-		curly                  : ["error", "all"],
-		quotes                 : ["error", "double"],
-		indent                 : ["error", "tab"],
-		"brace-style"          : ["error", "stroustrup", { allowSingleLine: false }],
-		"space-infix-ops"      : ["error"],
-		"comma-dangle"         : ["warn", "never"]
-	},
-	//overrides 指定某些文件的指定规则 */
-	overrides: [
-		{
-			files: ["*.vue"],
-			rules: { "vue/multi-word-component-names": 0 }
-		}
-	]
+  //root: true 用于指定它是最顶层的配置，即它在任何情况下都会被采用，而不会被继承覆盖
+  root: true,
+  //env 指定代码运行的环境
+  env: {
+    browser: true,
+    node: true,
+    es2021: true,
+    es6: true,
+  },
+  //extends 指定继承的配置
+  extends: ["plugin:vue/essential"],
+  //plugins 指定使用的插件
+  plugins: ["@typescript-eslint"],
+  // parserOptions 指定解析器选项
+  parserOptions: { parser: "babel-eslint" },
+  plugins: ["vue"],
+  // rules 指定自定义的规则
+  rules: {
+    //自动对齐上下行等号
+    "key-spacing": ["error", { beforeColon: false, afterColon: true }],
+    eqeqeq: "off",
+    curly: "error",
+    quotes: ["error", "double"],
+    "arrow-parens": 0,
+    "generator-star-spacing": 0,
+    "no-unused-vars": "warn",
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
+    indent: [2, 4, { SwitchCase: 1 }],
+    "space-before-function-paren": ["error", "never"],
+    "no-constant-condition": ["warn"],
+    "no-empty": ["off"],
+    "comma-spacing": ["error", { after: true }],
+    "key-spacing": [
+      "error",
+      {
+        singleLine: {},
+        multiLine: { align: "colon" },
+      },
+    ],
+    "object-curly-newline": ["error", { multiline: true }],
+    "array-bracket-newline": ["error", { multiline: true }],
+    curly: ["error", "all"],
+    quotes: ["error", "double"],
+    indent: ["error", "tab"],
+    "brace-style": ["error", "stroustrup", { allowSingleLine: false }],
+    "space-infix-ops": ["error"],
+    "comma-dangle": ["warn", "never"],
+  },
+  //overrides 指定某些文件的指定规则 */
+  overrides: [
+    {
+      files: ["*.vue"],
+      rules: { "vue/multi-word-component-names": 0 },
+    },
+  ],
 };
 
 /*

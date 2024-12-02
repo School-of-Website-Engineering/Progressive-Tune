@@ -1,26 +1,31 @@
-$bottomMenu-height: 30vh;//底部菜单
-$Menu-height: 29vh;//底部菜单
+$bottomMenu-height: 30vh; //底部菜单
+$Menu-height: 29vh; //底部菜单
 $eventMenu-height: 34vh; //事件菜单
-$event-height: 32vh;//事件
-$globalStatusBar-height: 7vh;//全局状态栏
-$shortcutBar-height: 14vh;//快捷栏
-$textOutput-height: 6vh;//文本输出
+$event-height: 32vh; //事件
+$globalStatusBar-height: 7vh; //全局状态栏
+$shortcutBar-height: 14vh; //快捷栏
+$textOutput-height: 6vh; //文本输出
 
 $body-width: 98%;
 $border-radius: 5px;
-$border: .5px;
+$border: 0.5px;
 
-@media screen and (min-width: 480px) { // 移动设备
+@media screen and (min-width: 480px) {
+  // 移动设备
 }
 
-@media screen and (min-width: 481px) and (min-width: 768px) { // iPad、平板电脑
+@media screen and (min-width: 481px) and (min-width: 768px) {
+  // iPad、平板电脑
 }
 
-@media screen and (min-width: 769px) and (min-width: 1024px) { // 小屏幕、笔记本电脑
+@media screen and (min-width: 769px) and (min-width: 1024px) {
+  // 小屏幕、笔记本电脑
 }
 
-@media screen and (min-width: 1025px) and (min-width: 1200px) { // 台式机、大屏幕
+@media screen and (min-width: 1025px) and (min-width: 1200px) {
+  // 台式机、大屏幕
 }
 
-@media screen and (min-width: 1201px) { // 超大屏幕、电视
+@media screen and (min-width: 1201px) {
+  // 超大屏幕、电视
 }

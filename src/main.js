@@ -5,19 +5,19 @@ import router from "./router";
 import "./assets/scss/global.scss";
 import "amfe-flexible";
 import {
-	Button,
-	Col,
-	Loading,
-	NoticeBar,
-	Row,
-	Tag,
-	Badge,
-	icon,
-	cell,
-	Overlay,
-	Popup,
-	Toast,
-	List
+  Button,
+  Col,
+  Loading,
+  NoticeBar,
+  Row,
+  Tag,
+  Badge,
+  icon,
+  cell,
+  Overlay,
+  Popup,
+  Toast,
+  List,
 } from "vant";
 
 Vue.use(List);
@@ -38,7 +38,7 @@ Vue.use(Toast);
 Vue.prototype.$EventBus = new Vue();
 
 new Vue({
-	store,
-	router,
-	render: (h) => h(App)
+  store,
+  router,
+  render: (h) => h(App),
 }).$mount("#app");
